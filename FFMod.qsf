@@ -57,3 +57,24 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name VHDL_FILE FFMod.vhd
+set_location_assignment PIN_62 -to clkin
+set_location_assignment PIN_18 -to countBinario[1]
+set_location_assignment PIN_19 -to countBinario[0]
+set_location_assignment PIN_2 -to salida[15]
+set_location_assignment PIN_3 -to salida[14]
+set_location_assignment PIN_4 -to salida[13]
+set_location_assignment PIN_5 -to salida[12]
+set_location_assignment PIN_6 -to salida[11]
+set_location_assignment PIN_7 -to salida[10]
+set_location_assignment PIN_8 -to salida[9]
+set_location_assignment PIN_33 -to salida[8]
+set_location_assignment PIN_30 -to salida[7]
+set_location_assignment PIN_35 -to salida[6]
+set_location_assignment PIN_34 -to salida[5]
+set_location_assignment PIN_37 -to salida[4]
+set_location_assignment PIN_36 -to salida[3]
+set_location_assignment PIN_39 -to salida[2]
+set_location_assignment PIN_38 -to salida[1]
+set_location_assignment PIN_26 -to salida[0]
+set_location_assignment PIN_1 -to salida[16]
+set_location_assignment PIN_16 -to countBinario[2]

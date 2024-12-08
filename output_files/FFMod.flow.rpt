@@ -1,5 +1,5 @@
 Flow report for FFMod
-Fri Dec  6 21:21:53 2024
+Sun Dec  8 14:22:20 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Fri Dec  6 21:21:53 2024          ;
+; Flow Status           ; Successful - Sun Dec  8 14:22:20 2024          ;
 ; Quartus Prime Version ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name         ; FFMod                                          ;
 ; Top-level Entity Name ; FFMod                                          ;
 ; Family                ; MAX II                                         ;
 ; Device                ; EPM240T100C5                                   ;
 ; Timing Models         ; Final                                          ;
-; Total logic elements  ; 58 / 240 ( 24 % )                              ;
-; Total pins            ; 20 / 80 ( 25 % )                               ;
+; Total logic elements  ; 62 / 240 ( 26 % )                              ;
+; Total pins            ; 21 / 80 ( 26 % )                               ;
 ; Total virtual pins    ; 0                                              ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                                  ;
 +-----------------------+------------------------------------------------+
@@ -60,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2024 21:21:23 ;
+; Start date & time ; 12/08/2024 14:21:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; FFMod               ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                       ; Value                           ; Default Value ; Entity Name ; Section Id                        ;
 +---------------------------------------+---------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                 ; 105850255797837.173354168313940 ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                 ; 207759719007155.173368931915080 ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST       ; Off                             ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -91,12 +91,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4776 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:07     ; 1.0                     ; 5802 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4682 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4684 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4633 MB             ; 00:00:00                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4772 MB             ; 00:00:15                           ;
+; Fitter               ; 00:00:03     ; 1.0                     ; 5898 MB             ; 00:00:02                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4672 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:00     ; 1.0                     ; 4680 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4626 MB             ; 00:00:00                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:17                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -105,11 +105,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; addrian          ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; addrian          ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; addrian          ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; addrian          ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; addrian          ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-HL08INQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-HL08INQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-HL08INQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-HL08INQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-HL08INQ  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
