@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FFMod
-Sun Dec  8 11:07:56 2024
+Sun Dec  8 14:22:13 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -42,7 +42,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Dec  8 11:07:56 2024          ;
+; Analysis & Synthesis Status ; Successful - Sun Dec  8 14:22:13 2024          ;
 ; Quartus Prime Version       ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name               ; FFMod                                          ;
 ; Top-level Entity Name       ; FFMod                                          ;
@@ -227,7 +227,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Dec  8 11:07:50 2024
+    Info: Processing started: Sun Dec  8 14:21:58 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FFMod -c FFMod
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -248,8 +248,8 @@ Info (21057): Implemented 89 device resources after synthesis - the final resour
     Info (21061): Implemented 68 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
     Info: Peak virtual memory: 4772 megabytes
-    Info: Processing ended: Sun Dec  8 11:07:56 2024
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:14
+    Info: Processing ended: Sun Dec  8 14:22:13 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:15
 
 

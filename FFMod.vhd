@@ -32,9 +32,20 @@ begin
     CONTADOR: process(clkint)
     begin
         if rising_edge(clkint) then
-				q(2) <= (not q(2) and not q(1) and not q(0)) or (q(2) and not q(1) and q(0));  -- D2
-            q(1) <= (not q(2) and q(1) and not q(0)) or (q(2) and not q(1) and not q(0));  -- D1
-            q(0) <= (not q(1) and not q(0)) or (not q(2) and q(1) and q(0));  
+		  
+				--q(2) <= (not q(2) and not q(1) and not q(0)) or (q(2) and not q(1) and q(0));  -- D2
+            --q(1) <= (not q(2) and q(1) and not q(0)) or (q(2) and not q(1) and not q(0));  -- D1
+            --q(0) <= (not q(1) and not q(0)) or (not q(2) and q(1) and q(0));
+		  
+				case q is
+                when "101" => q <= "100";  -- Estado 5 → 4
+                when "100" => q <= "011";  -- Estado 4 → 3
+                when "011" => q <= "010";  -- Estado 3 → 1
+					 when "010" => q <= "001";  -- Estado 2 → 1
+                when "001" => q <= "000";  -- Estado 1 → 0
+                when "000" => q <= "101";  -- Estado 0 → 5 (Reinicia el ciclo)
+                when others => q <= "101";  -- Si por alguna razón llegamos a un estado inesperado, volvemos al estado 5
+            end case; 
         end if;
 		  
     end process;
@@ -49,6 +60,7 @@ begin
 				when "011" => salida <= "10000111111101111"; -- 3
 				when "010" => salida <= "10010111111101011"; -- 2
 				when "001" => salida <= "11111111101111011"; -- 1
+				when "000" => salida <= "00000000111111111"; -- 1
             when others => salida <= "00000000111111111"; -- 0
         end case;
     end process;

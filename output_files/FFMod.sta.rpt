@@ -1,5 +1,5 @@
 Timing Analyzer report for FFMod
-Sun Dec  8 11:08:00 2024
+Sun Dec  8 14:22:18 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -97,8 +97,8 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 114.57 MHz ; 114.57 MHz      ; clkin      ;      ;
-; 355.75 MHz ; 355.75 MHz      ; clkint     ;      ;
+; 124.04 MHz ; 124.04 MHz      ; clkin      ;      ;
+; 369.41 MHz ; 369.41 MHz      ; clkint     ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -108,8 +108,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +--------+--------+---------------+
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
-; clkin  ; -7.728 ; -174.378      ;
-; clkint ; -1.811 ; -5.400        ;
+; clkin  ; -7.062 ; -161.147      ;
+; clkint ; -1.707 ; -5.109        ;
 +--------+--------+---------------+
 
 
@@ -119,7 +119,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock  ; Slack  ; End Point TNS ;
 +--------+--------+---------------+
 ; clkin  ; -1.727 ; -1.727        ;
-; clkint ; 1.680  ; 0.000         ;
+; clkint ; 1.679  ; 0.000         ;
 +--------+--------+---------------+
 
 
@@ -150,106 +150,106 @@ No paths to report.
 +--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node    ; To Node      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
-; -7.728 ; counTime[6]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.395      ;
-; -7.719 ; counTime[0]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.386      ;
-; -7.700 ; counTime[7]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.367      ;
-; -7.634 ; counTime[1]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.301      ;
-; -7.622 ; counTime[15] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.289      ;
-; -7.610 ; counTime[11] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.277      ;
-; -7.599 ; counTime[14] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.266      ;
-; -7.581 ; counTime[6]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.248      ;
-; -7.572 ; counTime[0]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.239      ;
-; -7.557 ; counTime[6]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.224      ;
-; -7.557 ; counTime[2]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.224      ;
-; -7.552 ; counTime[18] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.219      ;
-; -7.548 ; counTime[0]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.215      ;
-; -7.538 ; counTime[6]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.205      ;
-; -7.529 ; counTime[0]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.196      ;
-; -7.487 ; counTime[1]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.154      ;
-; -7.475 ; counTime[7]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.142      ;
-; -7.475 ; counTime[15] ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.142      ;
-; -7.474 ; counTime[6]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.141      ;
-; -7.465 ; counTime[0]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.132      ;
-; -7.463 ; counTime[1]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.130      ;
-; -7.452 ; counTime[14] ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.119      ;
-; -7.445 ; counTime[9]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.112      ;
-; -7.444 ; counTime[1]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.111      ;
-; -7.420 ; counTime[8]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.087      ;
-; -7.380 ; counTime[1]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.047      ;
-; -7.368 ; counTime[15] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.035      ;
-; -7.361 ; counTime[7]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.028      ;
-; -7.359 ; counTime[7]  ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.026      ;
-; -7.345 ; counTime[14] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 8.012      ;
-; -7.328 ; counTime[7]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.995      ;
-; -7.325 ; counTime[6]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.992      ;
-; -7.316 ; counTime[0]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.983      ;
-; -7.308 ; counTime[6]  ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.975      ;
-; -7.304 ; counTime[7]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.971      ;
-; -7.299 ; counTime[0]  ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.966      ;
-; -7.282 ; counTime[10] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.949      ;
-; -7.280 ; counTime[9]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.947      ;
-; -7.278 ; counTime[11] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.945      ;
-; -7.274 ; counTime[6]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.941      ;
-; -7.273 ; counTime[8]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.940      ;
-; -7.271 ; counTime[11] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.938      ;
-; -7.269 ; counTime[12] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.936      ;
-; -7.269 ; counTime[11] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.936      ;
-; -7.265 ; counTime[0]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.932      ;
-; -7.263 ; counTime[6]  ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.930      ;
-; -7.254 ; counTime[0]  ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.921      ;
-; -7.253 ; counTime[19] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.920      ;
-; -7.249 ; counTime[8]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.916      ;
-; -7.240 ; counTime[7]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.907      ;
-; -7.239 ; counTime[7]  ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.906      ;
-; -7.231 ; counTime[7]  ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.898      ;
-; -7.231 ; counTime[1]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.898      ;
-; -7.221 ; counTime[7]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.888      ;
-; -7.219 ; counTime[15] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.886      ;
-; -7.218 ; counTime[2]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.885      ;
-; -7.216 ; counTime[2]  ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.883      ;
-; -7.214 ; counTime[16] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.881      ;
-; -7.214 ; counTime[1]  ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.881      ;
-; -7.213 ; counTime[18] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.880      ;
-; -7.211 ; counTime[18] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.878      ;
-; -7.202 ; counTime[15] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.869      ;
-; -7.196 ; counTime[14] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.863      ;
-; -7.180 ; counTime[1]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.847      ;
-; -7.179 ; counTime[14] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.846      ;
-; -7.169 ; counTime[1]  ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.836      ;
-; -7.166 ; counTime[8]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.833      ;
-; -7.160 ; counTime[6]  ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.827      ;
-; -7.151 ; counTime[0]  ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.818      ;
-; -7.150 ; counTime[11] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.817      ;
-; -7.149 ; counTime[11] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.816      ;
-; -7.147 ; counTime[13] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.814      ;
-; -7.141 ; counTime[11] ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.808      ;
-; -7.135 ; counTime[10] ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.802      ;
-; -7.133 ; counTime[9]  ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.800      ;
-; -7.132 ; counTime[3]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.799      ;
-; -7.131 ; counTime[11] ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.798      ;
-; -7.122 ; counTime[12] ; counTime[23] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.789      ;
-; -7.111 ; counTime[10] ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.778      ;
-; -7.109 ; counTime[9]  ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.776      ;
-; -7.107 ; counTime[11] ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.774      ;
-; -7.106 ; counTime[9]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.773      ;
-; -7.104 ; counTime[9]  ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.771      ;
-; -7.097 ; counTime[2]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.764      ;
-; -7.096 ; counTime[2]  ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.763      ;
-; -7.095 ; counTime[14] ; counTime[15] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.762      ;
-; -7.092 ; counTime[18] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.759      ;
-; -7.091 ; counTime[18] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.758      ;
-; -7.088 ; counTime[2]  ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.755      ;
-; -7.083 ; counTime[18] ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.750      ;
-; -7.078 ; counTime[16] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.745      ;
-; -7.072 ; counTime[7]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.739      ;
-; -7.070 ; counTime[0]  ; counTime[6]  ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.737      ;
-; -7.066 ; counTime[1]  ; counTime[13] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.733      ;
-; -7.055 ; counTime[7]  ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.722      ;
-; -7.028 ; counTime[10] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.695      ;
-; -7.026 ; counTime[9]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.693      ;
-; -7.024 ; counTime[11] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.691      ;
-; -7.019 ; counTime[4]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.686      ;
-; -7.017 ; counTime[8]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.684      ;
+; -7.062 ; counTime[11] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.729      ;
+; -7.048 ; counTime[11] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.715      ;
+; -7.048 ; counTime[11] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.715      ;
+; -7.047 ; counTime[11] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.714      ;
+; -7.045 ; counTime[11] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.712      ;
+; -7.043 ; counTime[11] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.710      ;
+; -6.963 ; counTime[16] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.630      ;
+; -6.949 ; counTime[16] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.616      ;
+; -6.949 ; counTime[16] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.616      ;
+; -6.948 ; counTime[16] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.615      ;
+; -6.946 ; counTime[16] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.613      ;
+; -6.944 ; counTime[16] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.611      ;
+; -6.936 ; counTime[22] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.603      ;
+; -6.922 ; counTime[22] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.589      ;
+; -6.922 ; counTime[22] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.589      ;
+; -6.921 ; counTime[22] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.588      ;
+; -6.919 ; counTime[22] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.586      ;
+; -6.917 ; counTime[22] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.584      ;
+; -6.905 ; counTime[10] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.572      ;
+; -6.891 ; counTime[10] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.558      ;
+; -6.891 ; counTime[10] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.558      ;
+; -6.890 ; counTime[10] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.557      ;
+; -6.888 ; counTime[10] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.555      ;
+; -6.886 ; counTime[10] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.553      ;
+; -6.823 ; counTime[11] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.490      ;
+; -6.821 ; counTime[11] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.488      ;
+; -6.757 ; counTime[21] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.424      ;
+; -6.750 ; counTime[11] ; clkint       ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.417      ;
+; -6.749 ; counTime[8]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.416      ;
+; -6.743 ; counTime[21] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.410      ;
+; -6.743 ; counTime[21] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.410      ;
+; -6.742 ; counTime[21] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.409      ;
+; -6.740 ; counTime[21] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.407      ;
+; -6.738 ; counTime[21] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.405      ;
+; -6.724 ; counTime[16] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.391      ;
+; -6.722 ; counTime[16] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.389      ;
+; -6.720 ; counTime[5]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.387      ;
+; -6.697 ; counTime[22] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.364      ;
+; -6.695 ; counTime[22] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.362      ;
+; -6.672 ; counTime[8]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.339      ;
+; -6.666 ; counTime[10] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.333      ;
+; -6.664 ; counTime[10] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.331      ;
+; -6.661 ; counTime[11] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.328      ;
+; -6.651 ; counTime[16] ; clkint       ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.318      ;
+; -6.643 ; counTime[5]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.310      ;
+; -6.624 ; counTime[22] ; clkint       ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.291      ;
+; -6.601 ; counTime[20] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.268      ;
+; -6.597 ; counTime[0]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.264      ;
+; -6.593 ; counTime[10] ; clkint       ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.260      ;
+; -6.587 ; counTime[20] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.254      ;
+; -6.587 ; counTime[20] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.254      ;
+; -6.586 ; counTime[20] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.253      ;
+; -6.584 ; counTime[20] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.251      ;
+; -6.582 ; counTime[20] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.249      ;
+; -6.575 ; counTime[19] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.242      ;
+; -6.562 ; counTime[9]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.229      ;
+; -6.562 ; counTime[16] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.229      ;
+; -6.561 ; counTime[19] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.228      ;
+; -6.561 ; counTime[19] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.228      ;
+; -6.560 ; counTime[19] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.227      ;
+; -6.558 ; counTime[19] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.225      ;
+; -6.556 ; counTime[19] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.223      ;
+; -6.543 ; counTime[7]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.210      ;
+; -6.542 ; counTime[12] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.209      ;
+; -6.536 ; counTime[2]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.203      ;
+; -6.535 ; counTime[22] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.202      ;
+; -6.531 ; counTime[8]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.198      ;
+; -6.529 ; counTime[7]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.196      ;
+; -6.529 ; counTime[7]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.196      ;
+; -6.528 ; counTime[7]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.195      ;
+; -6.526 ; counTime[7]  ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.193      ;
+; -6.524 ; counTime[7]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.191      ;
+; -6.520 ; counTime[0]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.187      ;
+; -6.518 ; counTime[21] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.185      ;
+; -6.516 ; counTime[21] ; counTime[16] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.183      ;
+; -6.504 ; counTime[10] ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.171      ;
+; -6.502 ; counTime[5]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.169      ;
+; -6.485 ; counTime[9]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.152      ;
+; -6.465 ; counTime[12] ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.132      ;
+; -6.459 ; counTime[2]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.126      ;
+; -6.448 ; counTime[1]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.115      ;
+; -6.445 ; counTime[21] ; clkint       ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.112      ;
+; -6.429 ; counTime[5]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.096      ;
+; -6.425 ; counTime[18] ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.092      ;
+; -6.416 ; counTime[3]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.083      ;
+; -6.414 ; counTime[3]  ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.081      ;
+; -6.411 ; counTime[18] ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.078      ;
+; -6.411 ; counTime[18] ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.078      ;
+; -6.410 ; counTime[18] ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.077      ;
+; -6.408 ; counTime[18] ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.075      ;
+; -6.406 ; counTime[18] ; counTime[20] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.073      ;
+; -6.402 ; counTime[3]  ; counTime[19] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.069      ;
+; -6.402 ; counTime[3]  ; counTime[24] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.069      ;
+; -6.401 ; counTime[3]  ; counTime[12] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.068      ;
+; -6.399 ; counTime[3]  ; counTime[21] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.066      ;
+; -6.388 ; counTime[11] ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.055      ;
+; -6.379 ; counTime[0]  ; counTime[18] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.046      ;
+; -6.371 ; counTime[1]  ; counTime[17] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.038      ;
+; -6.367 ; counTime[9]  ; counTime[11] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.034      ;
+; -6.362 ; counTime[20] ; counTime[22] ; clkin        ; clkin       ; 1.000        ; 0.000      ; 7.029      ;
 +--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -258,15 +258,15 @@ No paths to report.
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -1.811 ; q[1]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.478      ;
-; -1.795 ; q[2]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.462      ;
-; -1.794 ; q[2]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.461      ;
-; -1.594 ; q[0]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.261      ;
-; -1.582 ; q[0]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.249      ;
-; -1.579 ; q[0]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.246      ;
-; -1.320 ; q[2]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.987      ;
-; -1.234 ; q[1]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.901      ;
-; -1.234 ; q[1]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.901      ;
+; -1.707 ; q[0]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.374      ;
+; -1.705 ; q[0]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.372      ;
+; -1.697 ; q[0]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.364      ;
+; -1.501 ; q[1]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.168      ;
+; -1.496 ; q[1]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.163      ;
+; -1.490 ; q[1]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 2.157      ;
+; -1.239 ; q[2]      ; q[0]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.906      ;
+; -1.235 ; q[2]      ; q[1]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.902      ;
+; -1.233 ; q[2]      ; q[2]    ; clkint       ; clkint      ; 1.000        ; 0.000      ; 1.900      ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -277,104 +277,104 @@ No paths to report.
 +--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 ; -1.727 ; clkint       ; clkint       ; clkint       ; clkin       ; 0.000        ; 3.458      ; 2.328      ;
 ; -1.227 ; clkint       ; clkint       ; clkint       ; clkin       ; -0.500       ; 3.458      ; 2.328      ;
-; 2.853  ; counTime[2]  ; counTime[2]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.074      ;
-; 2.873  ; counTime[4]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.094      ;
-; 3.105  ; counTime[23] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.326      ;
-; 3.269  ; counTime[24] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.490      ;
-; 3.507  ; counTime[21] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.728      ;
-; 3.582  ; counTime[18] ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.803      ;
-; 3.654  ; counTime[3]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.875      ;
-; 3.781  ; counTime[2]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.002      ;
-; 3.849  ; counTime[23] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.070      ;
-; 3.852  ; counTime[23] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.073      ;
-; 3.868  ; counTime[23] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.089      ;
-; 3.868  ; counTime[23] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.089      ;
-; 3.919  ; counTime[5]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.140      ;
-; 3.957  ; counTime[23] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.178      ;
-; 3.994  ; counTime[1]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.215      ;
-; 4.013  ; counTime[24] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.234      ;
-; 4.016  ; counTime[24] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.237      ;
-; 4.031  ; counTime[23] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.252      ;
-; 4.032  ; counTime[24] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.253      ;
-; 4.032  ; counTime[24] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.253      ;
-; 4.062  ; counTime[3]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.283      ;
-; 4.063  ; counTime[17] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.284      ;
-; 4.069  ; counTime[2]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.290      ;
-; 4.121  ; counTime[24] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.342      ;
-; 4.156  ; counTime[22] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.377      ;
-; 4.189  ; counTime[23] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.410      ;
-; 4.195  ; counTime[24] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.416      ;
-; 4.252  ; counTime[15] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.473      ;
-; 4.353  ; counTime[24] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.574      ;
-; 4.390  ; counTime[18] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.611      ;
-; 4.438  ; counTime[5]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.659      ;
-; 4.506  ; counTime[6]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.727      ;
-; 4.600  ; counTime[23] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.821      ;
-; 4.608  ; counTime[23] ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.829      ;
-; 4.609  ; counTime[23] ; counTime[12] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.830      ;
-; 4.728  ; counTime[23] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.949      ;
-; 4.730  ; counTime[23] ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.951      ;
-; 4.738  ; counTime[1]  ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.959      ;
-; 4.741  ; counTime[1]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.962      ;
-; 4.745  ; counTime[4]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.966      ;
-; 4.757  ; counTime[1]  ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.978      ;
-; 4.757  ; counTime[1]  ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.978      ;
-; 4.764  ; counTime[24] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.985      ;
-; 4.772  ; counTime[24] ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.993      ;
-; 4.773  ; counTime[24] ; counTime[12] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.994      ;
-; 4.783  ; counTime[12] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.004      ;
-; 4.807  ; counTime[17] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.028      ;
-; 4.810  ; counTime[17] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.031      ;
-; 4.826  ; counTime[17] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.047      ;
-; 4.826  ; counTime[17] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.047      ;
-; 4.846  ; counTime[1]  ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.067      ;
-; 4.891  ; counTime[8]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.112      ;
-; 4.892  ; counTime[24] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.113      ;
-; 4.894  ; counTime[24] ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.115      ;
-; 4.900  ; counTime[22] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.121      ;
-; 4.903  ; counTime[22] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.124      ;
-; 4.915  ; counTime[17] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.136      ;
-; 4.919  ; counTime[22] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.140      ;
-; 4.919  ; counTime[22] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.140      ;
-; 4.920  ; counTime[1]  ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.141      ;
-; 4.947  ; counTime[9]  ; counTime[9]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.168      ;
-; 4.957  ; counTime[2]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.178      ;
-; 4.968  ; counTime[10] ; counTime[10] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.189      ;
-; 4.987  ; counTime[7]  ; counTime[7]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.208      ;
-; 4.989  ; counTime[17] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.210      ;
-; 4.996  ; counTime[15] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.217      ;
-; 4.999  ; counTime[15] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.220      ;
-; 5.008  ; counTime[22] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.229      ;
-; 5.015  ; counTime[15] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.236      ;
-; 5.015  ; counTime[15] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.236      ;
-; 5.025  ; counTime[1]  ; counTime[2]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.246      ;
-; 5.035  ; counTime[1]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.256      ;
-; 5.069  ; counTime[23] ; counTime[11] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.290      ;
-; 5.078  ; counTime[1]  ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.299      ;
-; 5.082  ; counTime[22] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.303      ;
-; 5.097  ; counTime[0]  ; counTime[2]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.318      ;
-; 5.104  ; counTime[15] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.325      ;
-; 5.107  ; counTime[0]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.328      ;
-; 5.147  ; counTime[17] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.368      ;
-; 5.164  ; counTime[17] ; counTime[17] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.385      ;
-; 5.178  ; counTime[15] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.399      ;
-; 5.182  ; counTime[5]  ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.403      ;
-; 5.185  ; counTime[5]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.406      ;
-; 5.201  ; counTime[5]  ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.422      ;
-; 5.201  ; counTime[5]  ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.422      ;
-; 5.208  ; counTime[18] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.429      ;
-; 5.228  ; counTime[21] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.449      ;
-; 5.233  ; counTime[24] ; counTime[11] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.454      ;
-; 5.238  ; counTime[3]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.459      ;
-; 5.240  ; counTime[22] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.461      ;
-; 5.242  ; counTime[0]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.463      ;
-; 5.249  ; counTime[20] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.470      ;
-; 5.250  ; counTime[6]  ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.471      ;
-; 5.253  ; counTime[6]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.474      ;
-; 5.269  ; counTime[6]  ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.490      ;
-; 5.269  ; counTime[6]  ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.490      ;
-; 5.284  ; counTime[19] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.505      ;
-; 5.290  ; counTime[14] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.511      ;
+; 3.350  ; counTime[22] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.571      ;
+; 3.514  ; counTime[15] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.735      ;
+; 3.519  ; counTime[15] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.740      ;
+; 3.670  ; counTime[3]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 3.891      ;
+; 3.791  ; counTime[7]  ; counTime[7]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.012      ;
+; 3.922  ; counTime[4]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.143      ;
+; 3.925  ; counTime[21] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.146      ;
+; 3.930  ; counTime[19] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.151      ;
+; 3.934  ; counTime[2]  ; counTime[2]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.155      ;
+; 4.042  ; counTime[22] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.263      ;
+; 4.049  ; counTime[1]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.270      ;
+; 4.054  ; counTime[1]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.275      ;
+; 4.060  ; counTime[14] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.281      ;
+; 4.067  ; counTime[24] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.288      ;
+; 4.159  ; counTime[16] ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.380      ;
+; 4.160  ; counTime[18] ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.381      ;
+; 4.211  ; counTime[5]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.432      ;
+; 4.216  ; counTime[5]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.437      ;
+; 4.222  ; counTime[15] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.443      ;
+; 4.223  ; counTime[15] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.444      ;
+; 4.326  ; counTime[24] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.547      ;
+; 4.331  ; counTime[24] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.552      ;
+; 4.377  ; counTime[20] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.598      ;
+; 4.377  ; counTime[23] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.598      ;
+; 4.390  ; counTime[17] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.611      ;
+; 4.395  ; counTime[17] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.616      ;
+; 4.421  ; counTime[22] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.642      ;
+; 4.455  ; counTime[13] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.676      ;
+; 4.476  ; counTime[2]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.697      ;
+; 4.503  ; counTime[1]  ; counTime[1]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.724      ;
+; 4.546  ; counTime[15] ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.767      ;
+; 4.564  ; counTime[23] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.785      ;
+; 4.569  ; counTime[23] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.790      ;
+; 4.635  ; counTime[15] ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.856      ;
+; 4.704  ; counTime[13] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.925      ;
+; 4.706  ; counTime[15] ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.927      ;
+; 4.708  ; counTime[15] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.929      ;
+; 4.722  ; counTime[18] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.943      ;
+; 4.729  ; counTime[20] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.950      ;
+; 4.729  ; counTime[2]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.950      ;
+; 4.731  ; counTime[3]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.952      ;
+; 4.734  ; counTime[2]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.955      ;
+; 4.757  ; counTime[1]  ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.978      ;
+; 4.758  ; counTime[1]  ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 4.979      ;
+; 4.800  ; counTime[10] ; counTime[10] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.021      ;
+; 4.814  ; counTime[0]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.035      ;
+; 4.832  ; counTime[21] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.053      ;
+; 4.841  ; counTime[2]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.062      ;
+; 4.856  ; counTime[19] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.077      ;
+; 4.870  ; counTime[20] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.091      ;
+; 4.877  ; counTime[5]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.098      ;
+; 4.880  ; counTime[8]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.101      ;
+; 4.885  ; counTime[8]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.106      ;
+; 4.919  ; counTime[5]  ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.140      ;
+; 4.920  ; counTime[5]  ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.141      ;
+; 4.928  ; counTime[15] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.149      ;
+; 4.930  ; counTime[15] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.151      ;
+; 4.932  ; counTime[15] ; counTime[12] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.153      ;
+; 4.933  ; counTime[15] ; counTime[19] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.154      ;
+; 4.933  ; counTime[15] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.154      ;
+; 4.947  ; counTime[15] ; counTime[11] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.168      ;
+; 4.947  ; counTime[21] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.168      ;
+; 4.952  ; counTime[18] ; counTime[21] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.173      ;
+; 4.979  ; counTime[13] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.200      ;
+; 4.982  ; counTime[1]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.203      ;
+; 4.984  ; counTime[13] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.205      ;
+; 4.985  ; counTime[20] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.206      ;
+; 4.997  ; counTime[19] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.218      ;
+; 5.022  ; counTime[6]  ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.243      ;
+; 5.034  ; counTime[24] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.255      ;
+; 5.035  ; counTime[24] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.256      ;
+; 5.044  ; counTime[12] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.265      ;
+; 5.049  ; counTime[15] ; counTime[15] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.270      ;
+; 5.049  ; counTime[12] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.270      ;
+; 5.081  ; counTime[1]  ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.302      ;
+; 5.093  ; counTime[18] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.314      ;
+; 5.098  ; counTime[17] ; counTime[13] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.319      ;
+; 5.099  ; counTime[17] ; counTime[14] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.320      ;
+; 5.100  ; counTime[21] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.321      ;
+; 5.104  ; counTime[6]  ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.325      ;
+; 5.112  ; counTime[19] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.333      ;
+; 5.117  ; counTime[14] ; counTime[0]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.338      ;
+; 5.117  ; counTime[0]  ; counTime[3]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.338      ;
+; 5.122  ; counTime[14] ; counTime[6]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.343      ;
+; 5.130  ; counTime[4]  ; counTime[5]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.351      ;
+; 5.138  ; counTime[20] ; counTime[24] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.359      ;
+; 5.149  ; counTime[13] ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.370      ;
+; 5.154  ; counTime[12] ; counTime[12] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.375      ;
+; 5.170  ; counTime[1]  ; clkint       ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.391      ;
+; 5.200  ; counTime[19] ; counTime[20] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.421      ;
+; 5.208  ; counTime[18] ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.429      ;
+; 5.221  ; counTime[13] ; counTime[15] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.442      ;
+; 5.234  ; counTime[16] ; counTime[23] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.455      ;
+; 5.236  ; counTime[1]  ; counTime[4]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.457      ;
+; 5.237  ; counTime[9]  ; counTime[9]  ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.458      ;
+; 5.241  ; counTime[1]  ; counTime[16] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.462      ;
+; 5.243  ; counTime[5]  ; counTime[18] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.464      ;
+; 5.243  ; counTime[1]  ; counTime[22] ; clkin        ; clkin       ; 0.000        ; 0.000      ; 5.464      ;
 +--------+--------------+--------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -383,15 +383,15 @@ No paths to report.
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 1.680 ; q[1]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.901      ;
-; 1.680 ; q[1]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.901      ;
-; 1.766 ; q[2]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.987      ;
-; 2.025 ; q[0]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.246      ;
-; 2.028 ; q[0]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.249      ;
-; 2.040 ; q[0]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.261      ;
-; 2.240 ; q[2]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.461      ;
-; 2.241 ; q[2]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.462      ;
-; 2.257 ; q[1]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.478      ;
+; 1.679 ; q[2]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.900      ;
+; 1.681 ; q[2]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.902      ;
+; 1.685 ; q[2]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 1.906      ;
+; 1.936 ; q[1]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.157      ;
+; 1.942 ; q[1]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.163      ;
+; 1.947 ; q[1]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.168      ;
+; 2.143 ; q[0]      ; q[0]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.364      ;
+; 2.151 ; q[0]      ; q[2]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.372      ;
+; 2.153 ; q[0]      ; q[1]    ; clkint       ; clkint      ; 0.000        ; 0.000      ; 2.374      ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -505,7 +505,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Sun Dec  8 11:08:00 2024
+    Info: Processing started: Sun Dec  8 14:22:18 2024
 Info: Command: quartus_sta FFMod -c FFMod
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -522,16 +522,16 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -7.728
+Info (332146): Worst-case setup slack is -7.062
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.728            -174.378 clkin 
-    Info (332119):    -1.811              -5.400 clkint 
+    Info (332119):    -7.062            -161.147 clkin 
+    Info (332119):    -1.707              -5.109 clkint 
 Info (332146): Worst-case hold slack is -1.727
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -1.727              -1.727 clkin 
-    Info (332119):     1.680               0.000 clkint 
+    Info (332119):     1.679               0.000 clkint 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -544,8 +544,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4680 megabytes
-    Info: Processing ended: Sun Dec  8 11:08:00 2024
+    Info: Processing ended: Sun Dec  8 14:22:18 2024
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
