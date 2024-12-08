@@ -1,5 +1,5 @@
 Assembler report for FFMod
-Fri Dec  6 21:21:48 2024
+Sun Dec  8 11:07:59 2024
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/selec/Documents/development/Aplicaciones-Sistemas-Digitales/FFMod/output_files/FFMod.pof
+  5. Assembler Device Options: C:/Users/PC/Documents/development/sistemas-digitales/FFsTipoD/output_files/FFMod.pof
   6. Assembler Messages
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri Dec  6 21:21:48 2024 ;
+; Assembler Status      ; Successful - Sun Dec  8 11:07:59 2024 ;
 ; Revision Name         ; FFMod                                 ;
 ; Top-level Entity Name ; FFMod                                 ;
 ; Family                ; MAX II                                ;
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; File Name                                                                                         ;
-+---------------------------------------------------------------------------------------------------+
-; C:/Users/selec/Documents/development/Aplicaciones-Sistemas-Digitales/FFMod/output_files/FFMod.pof ;
-+---------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                            ;
++--------------------------------------------------------------------------------------+
+; File Name                                                                            ;
++--------------------------------------------------------------------------------------+
+; C:/Users/PC/Documents/development/sistemas-digitales/FFsTipoD/output_files/FFMod.pof ;
++--------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/selec/Documents/development/Aplicaciones-Sistemas-Digitales/FFMod/output_files/FFMod.pof ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                    ;
-+----------------+------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00189ED4                                                                                                 ;
-; Checksum       ; 0x0018A24C                                                                                                 ;
-+----------------+------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/PC/Documents/development/sistemas-digitales/FFsTipoD/output_files/FFMod.pof ;
++----------------+-----------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                       ;
++----------------+-----------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x0018747D                                                                                    ;
+; Checksum       ; 0x00187775                                                                                    ;
++----------------+-----------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,15 +78,15 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Fri Dec  6 21:21:47 2024
+    Info: Processing started: Sun Dec  8 11:07:59 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off FFMod -c FFMod
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4683 megabytes
-    Info: Processing ended: Fri Dec  6 21:21:48 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4673 megabytes
+    Info: Processing ended: Sun Dec  8 11:07:59 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 
 
